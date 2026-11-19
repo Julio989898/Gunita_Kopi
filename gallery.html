@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery | Gunita KOPI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a1008;--card:#261a0e;--line:#4a3420;--cream:#f5e6d0;--or:#c8813a;--lo:#e8a255;--ok:#7eb89a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--cream);font:17px/1.6 'Figtree',sans-serif}
+h1,h2,h3{font-family:'Young Serif',Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4rem)}h2{font-size:2rem}h3{font-size:1.2rem}
+a{color:var(--lo)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+.logo{font:1.5rem 'Young Serif',serif;color:var(--cream);text-decoration:none}.logo span{color:var(--cream)}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--cream);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{color:var(--or);border-color:var(--or)}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 24px;background:var(--or);color:var(--bg);border:0;border-radius:6px;font:700 1rem 'Figtree',sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--lo)}
+.btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--line)}
+:focus-visible{outline:3px solid var(--lo);outline-offset:2px}
+section{padding:56px 0}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center}
+.stack{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.row{display:flex;gap:14px;flex-wrap:wrap}
+.lead{color:var(--lo);font-size:1.15rem;max-width:46ch}
+.ph{min-height:300px;background:var(--card);border:1px dashed var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--lo);font-size:.95rem}
+.ph.sm{min-height:150px;width:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.card p{margin:0;color:var(--lo);font-size:.95rem}
+.card .bar{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.price{color:var(--lo);font-weight:700}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0}
+.tab{min-height:44px;padding:0 20px;border-radius:22px;border:1px solid var(--line);background:var(--card);color:var(--cream);font:1rem 'Figtree',sans-serif;cursor:pointer}
+.tab[aria-pressed=true]{background:var(--or);color:var(--bg);border-color:var(--or);font-weight:700}
+.status{display:none;margin-top:18px;padding:12px 16px;border:1px solid var(--ok);color:var(--cream);background:var(--card);border-radius:8px}
+.status::before{content:'\2713  ';color:var(--ok);font-weight:700}
+.status.show{display:block}
+form{display:flex;flex-direction:column;gap:14px}
+label{display:flex;flex-direction:column;gap:6px;color:var(--lo);font-size:.95rem}
+input,textarea{background:var(--card);color:var(--cream);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font:1rem 'Figtree',sans-serif}
+input:focus,textarea:focus{outline:0;border:2px solid var(--or);padding:11px 13px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--lo);font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="index.html">Gunita <span>KOPI</span></a><nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="menu.html">Menu</a><a href="gallery.html" aria-current=page>Gallery</a><a href="contact.html">Contact Us</a><a href="login.html">Login</a><a href="signup.html">Sign up</a></nav><a class="btn" href="buyer.html">Order now</a></div></header>
+<main>
+<section><div class="wrap"><h2>Gallery</h2><p class="lead">A look inside Gunita KOPI.</p><div class="grid"><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div><div class="ph" style="min-height:220px">Add photo</div></div></div></section>
+</main>
+<footer><div class="wrap"><span>Gunita KOPI</span><span>[Address], [Opening hours], [Phone]</span></div></footer>
+
+<script src="app.js"></script></body>
+</html>
