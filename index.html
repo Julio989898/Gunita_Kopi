@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gunita Kopi | A place where memories are brewed</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#home"><span class="mark">G</span>Gunita Kopi</a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a>
+    <a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact Us</a>
+  </nav>
+  <button class="btn" id="orderBtn">Order Now <span id="cartCount" class="count">0</span></button>
+</header>
+
+<main id="main">
+<!-- HOME -->
+<section class="page" id="home">
+  <div class="hero">
+    <div>
+      <h1>A place where memories are brewed.</h1>
+      <p class="lead">Coffee, pastries, and rice meals beside Baesa High School. Check the menu first, then drop by or pre-order through Messenger.</p>
+      <div class="row"><button class="btn" data-open-cart>Order Now</button><a class="btn ghost" href="#menu">View Menu</a></div>
+    </div>
+    <div class="ph hero-ph" role="img" aria-label="Placeholder for a photo of the Gunita Kopi counter"><span>Photo: café counter</span></div>
+  </div>
+  <h2>Featured drinks</h2>
+  <div class="grid" id="featured"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="about">
+  <h1>Our story</h1>
+  <div class="two">
+    <div class="prose">
+      <p>Gunita Kopi opened in April 2025 along Reparo Road in Caloocan, founded by Mr. Eric Espedilion. <em>Gunita</em> means memory and <em>Kopi</em> means coffee.</p>
+      <p>We serve students, teachers, workers, and neighbors who want a warm, familiar place to talk, study, and unwind.</p>
+      <h3>Mission</h3><p>To provide quality coffee, meals, and service that create comfort, happiness, and meaningful experiences for customers.</p>
+      <h3>Vision</h3><p>To become a well-known local café recognized for its warm atmosphere, friendly service, and positive community impact.</p>
+    </div>
+    <div class="ph" role="img" aria-label="Placeholder for a photo of the café"><span>Photo: our shop</span></div>
+  </div>
+  <h2>Meet the team</h2>
+  <div class="grid">
+    <article class="card center"><div class="ph sm"><span>Photo</span></div><h3>Mr. Eric Espedilion</h3><p>Owner and founder</p></article>
+    <article class="card center"><div class="ph sm"><span>Photo</span></div><h3>Our baristas</h3><p>Coffee, drinks, and the daily rush</p></article>
+    <article class="card center"><div class="ph sm"><span>Photo</span></div><h3>Working students</h3><p>Food prep, serving, and upkeep</p></article>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="page" id="services">
+  <h1>Our services</h1>
+  <p class="lead">Three ways to enjoy Gunita Kopi.</p>
+  <div class="grid">
+    <article class="card"><h3>Dine-in</h3><p>Comfortable seating for conversations and meals with friends or co-workers.</p></article>
+    <article class="card"><h3>Study and hangout</h3><p>A quiet corner for students and teachers from nearby schools to read, review, and relax.</p></article>
+    <article class="card"><h3>Messenger pre-order</h3><p>Add items to your order here, send it through Facebook Messenger, and pick it up at the café.</p></article>
+  </div>
+  <div class="cta"><p>Ready to order ahead?</p><button class="btn" data-open-cart>Order Now</button></div>
+</section>
+
+<!-- MENU -->
+<section class="page" id="menu">
+  <h1>Our menu</h1>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Menu categories"></div>
+  <p class="status" id="menuStatus" role="status" aria-live="polite">Pick a category, then tap Add to build your order.</p>
+  <div class="grid" id="menuGrid"></div>
+  <p class="note">Prices and availability are subject to change. Confirm with the café when you order.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="page" id="gallery">
+  <h1>Gallery</h1>
+  <div class="tabs" id="galTabs"></div>
+  <div class="gal" id="galGrid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="page" id="contact">
+  <h1>Contact us</h1>
+  <div class="two">
+    <form id="form" novalidate>
+      <h2>Send a message</h2>
+      <label for="fn">Name</label><input id="fn" required autocomplete="name">
+      <label for="fe">Email</label><input id="fe" type="email" required autocomplete="email">
+      <label for="fm">Message</label><textarea id="fm" rows="5" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+      <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+    <div>
+      <div class="ph" role="img" aria-label="Placeholder for a map"><span>Map: Reparo Road, beside Baesa High School</span></div>
+      <h2>Visit us</h2>
+      <p>Reparo Road, beside Baesa High School, Caloocan City</p>
+      <p>Hours: Daily, 10:00 AM to 9:00 PM <small>(update with your real hours)</small></p>
+      <p><a class="link" id="msgLink" target="_blank" rel="noopener" href="#">Message us on Facebook</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>Gunita Kopi · Reparo Road, Caloocan</span>
+  <span><a href="#contact">Hours</a> <a href="#contact">Location</a> <a href="#contact">Contact</a></span>
+</footer>
+
+<!-- CART -->
+<aside class="cart" id="cart" aria-label="Your order" aria-hidden="true">
+  <div class="cart-head"><h2>Your order</h2><button class="x" id="closeCart" aria-label="Close order panel">Close</button></div>
+  <div id="cartItems"></div>
+  <div class="total">Total <strong id="cartTotal">₱0</strong></div>
+  <label for="cName">Name for pickup</label><input id="cName" autocomplete="name">
+  <button class="btn wide" id="sendOrder">Send order on Messenger</button>
+  <button class="btn ghost wide" id="clearCart">Clear order</button>
+  <p class="status" id="cartStatus" role="status" aria-live="polite"></p>
+</aside>
+<div class="scrim" id="scrim"></div>
+<script src="script.js"></script>
+</body>
+</html>
